@@ -1,5 +1,5 @@
-- [Home](/)
-- [Market Data](MarketData/Home.md)
-  - [REST API](MarketData/REST.md)
-  - [WebSocket](MarketData/WebSocket.md)
-  
+* [Introduction](README.md)
+* [Market Data API](restapi/market-data.md)
+* [Trade API](restapi/trade.md)
+* [Authentication](authentication.md)
+* [WebSocket API](websocket.md)
