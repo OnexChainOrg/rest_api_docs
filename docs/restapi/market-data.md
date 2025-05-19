@@ -46,8 +46,8 @@ Get kline/candlestick data for a symbol.
 | symbol  | string | Yes      | Trading pair symbol (e.g., BTC_USDT) |
 | interval| string | Yes      | Kline interval (e.g., 1m, 5m, 1h, 1d) |
 | limit   | number | No       | Default 500; max 1000          |
-| startTime| number | No      | Start time in milliseconds     |
-| endTime | number | No       | End time in milliseconds       |
+| from| number | No      | Start time in milliseconds     |
+| to | number | No       | End time in milliseconds       |
 
 **Response:**
 
@@ -108,7 +108,7 @@ Get the current price for one or multiple symbols.
 
 | Name   | Type   | Required | Description                    |
 |--------|--------|----------|--------------------------------|
-| symbols| string | Yes      | Comma-separated list of symbols (e.g., BTC_USDT,ETH_USDT) |
+| symbols| string | Yes      | Multiple parameters, one for each symbol (e.g., symbols=BTC_USDT&symbols=ETH_USDT) |
 
 **Response:**
 

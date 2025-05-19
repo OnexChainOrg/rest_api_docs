@@ -34,37 +34,31 @@ Subscribe to order book updates for a symbol.
 **Response:**
 ```json
 {
-  "stream": "btc_usdt@depth",
-  "data": {
-    "e": "depthUpdate",
-    "E": 1499404630606,
-    "s": "BTC_USDT",
-    "U": 1,
-    "u": 2,
-    "b": [
-      ["0.0024", "10"]
-    ],
-    "a": [
-      ["0.0026", "100"]
-    ]
-  }
+  "lastUpdatedId": "2025-05-19T07:07:11.029Z",
+  "asks": [
+      [
+          "0.00152000",
+          "100.00000000"
+      ],
+      [
+          "0.00153000",
+          "300.00000000"
+      ]
+  ],
+  "bids": [
+      [
+          "0.00151000",
+          "300.00000000"
+      ]
+  ]
 }
 ```
 
-### Trade Stream
+<!-- ### Trade Stream
 
 Subscribe to real-time trade updates for a symbol.
 
 **Stream Name:** `{symbol}@trade`
-
-<!-- **Example:**
-```json
-{
-  "method": "SUBSCRIBE",
-  "params": ["btc_usdt@trade"],
-  "id": 1
-}
-``` -->
 
 **Response:**
 ```json
@@ -83,7 +77,7 @@ Subscribe to real-time trade updates for a symbol.
     "m": true
   }
 }
-```
+``` -->
 
 ### Kline/Candlestick Stream
 
@@ -99,10 +93,8 @@ Subscribe to candlestick updates for a symbol.
 - `1h`: 1 hour
 - `2h`: 2 hours
 - `4h`: 4 hours
-- `8h`: 8 hours
-- `24h`: 24 hours
 - `1d`: 1 day
-- `1W`: 1 week
+- `1w`: 1 week
 - `1M`: 1 month
 
 
@@ -119,30 +111,22 @@ Subscribe to candlestick updates for a symbol.
 **Response:**
 ```json
 {
-  "stream": "btc_usdt@kline_1m",
-  "data": {
     "e": "kline",
-    "E": 1499404907056,
-    "s": "BTC_USDT",
+    "E": 1747638388444,
+    "s": "SOL_BTC",
     "k": {
-      "t": 1499404860000,
-      "T": 1499404919999,
-      "s": "BTC_USDT",
-      "i": "1m",
-      "f": 77462,
-      "L": 77465,
-      "o": "0.0015",
-      "c": "0.0020",
-      "h": "0.0020",
-      "l": "0.0015",
-      "v": "1000",
-      "n": 4,
-      "x": false,
-      "q": "1.75",
-      "V": "500",
-      "Q": "0.75"
+        "h": 0.00152,
+        "l": 0.0015,
+        "q": 1.812,
+        "o": 0.00152,
+        "c": 0.0015,
+        "n": 6,
+        "t": 1747638388425,
+        "T": 1747638007623,
+        "i": "1d",
+        "s": "SOL_BTC",
+        "B": "0"
     }
-  }
 }
 ```
 

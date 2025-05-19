@@ -49,6 +49,7 @@ Place a new order.
     "type": "LIMIT",
     "price": "40000.00000000",
     "quantity": "1.00000000",
+    "leaveQuantity": "0.00000000",
     "time": 1499827319559
   },
   "timestamp": "2024-03-21T10:00:00.000Z"
@@ -88,8 +89,14 @@ Cancel an existing order.
   "statusCode": 200,
   "data": {
     "orderId": "1234567890",
-    "status": "CANCELED",
-    "symbol": "BTC_USDT"
+    "symbol": "BTC_USDT",
+    "price": 0.00152,
+    "quantity": 100,
+    "leaveQuantity": 100,
+    "side": "Sell",
+    "type": "Limit",
+    "status": "cancelled",
+    "timestamp": 1747637135399
   },
   "timestamp": "2024-03-21T10:00:00.000Z"
 }

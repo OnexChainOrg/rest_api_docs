@@ -10,7 +10,7 @@ Most endpoints require API key authentication. To authenticate your requests, in
 x-api-key: YOUR_API_KEY
 ```
 
-### Creating an API Key
+<!-- ### Creating an API Key
 
 To create an API key, you need to:
 
@@ -20,7 +20,7 @@ To create an API key, you need to:
 4. Set the desired permissions
 5. Save the API key and secret securely
 
-**Important:** The API secret is only shown once when creating the key. Make sure to save it securely.
+**Important:** The API secret is only shown once when creating the key. Make sure to save it securely. -->
 
 <!-- ## Permissions
 
@@ -37,12 +37,14 @@ API keys can have different permissions that control what actions they can perfo
 ## Security Best Practices
 
 1. **Never share your API key or secret**
-2. **Use IP restrictions** to limit API access to specific IP addresses
+2. **Use HTTPS** for all API requests
+3. **Store API keys securely** in your application
+
+<!-- 2. **Use IP restrictions** to limit API access to specific IP addresses
 3. **Set appropriate permissions** - only enable the permissions your application needs
 4. **Rotate API keys** periodically
-5. **Monitor API usage** for any suspicious activity
-6. **Use HTTPS** for all API requests
-7. **Store API keys securely** in your application
+5. **Monitor API usage** for any suspicious activity -->
+
 
 <!-- 
 ## Rate Limits
