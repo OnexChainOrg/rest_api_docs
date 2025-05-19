@@ -108,7 +108,7 @@ Get the current price for one or multiple symbols.
 
 | Name   | Type   | Required | Description                    |
 |--------|--------|----------|--------------------------------|
-| symbols| string | Yes      | Comma-separated list of symbols (e.g., BTC_USDT,ETHUSDT) |
+| symbols| string | Yes      | Comma-separated list of symbols (e.g., BTC_USDT,ETH_USDT) |
 
 **Response:**
 
@@ -121,7 +121,7 @@ Get the current price for one or multiple symbols.
       "price": "40000.00"
     },
     {
-      "symbol": "ETHUSDT",
+      "symbol": "ETH_USDT",
       "price": "2000.00"
     }
   ],
